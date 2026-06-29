@@ -126,4 +126,4 @@ CREATE TABLE IF NOT EXISTS admin_logs (
 
 -- Insert default admin (username: admin, password: admin123)
 INSERT INTO admins (username, email, password, full_name, role, is_active)
-VALUES ('admin', 'admin@student-system.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Administrator', 'superadmin', 1);
+VALUES ('admin', 'admin@student-system.com', '$2y$12$kVwhgOiNn1w8NfC3VX17ouEkIMH26Bd9LsQ7XQgf0CV26q1DE7DxC', 'Administrator', 'superadmin', 1);

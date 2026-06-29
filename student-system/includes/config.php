@@ -6,8 +6,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Database configuration
 define('DB_HOST', getenv('DB_HOST') ?: '127.0.0.1');
-define('DB_USER', getenv('DB_USER') ?: 'root');
-define('DB_PASS', getenv('DB_PASS') ?: '');
+define('DB_USER', getenv('DB_USER') ?: 'student_user');
+define('DB_PASS', getenv('DB_PASS') ?: 'student_pass');
 define('DB_NAME', getenv('DB_NAME') ?: 'student_system');
 
 // Create connection
