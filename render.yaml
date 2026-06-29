@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: student-system
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DB_HOST
+        fromDatabase:
+          name: student-system-db
+          property: host
+      - key: DB_USER
+        fromDatabase:
+          name: student-system-db
+          property: user
+      - key: DB_PASS
+        fromDatabase:
+          name: student-system-db
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: student-system-db
+          property: database
+
+databases:
+  - name: student-system-db
+    databaseName: student_system
+    user: student_user
+    plan: free
